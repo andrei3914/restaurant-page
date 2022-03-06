@@ -2,7 +2,7 @@ function Menu () {
     const element = document.createElement('div');
     element.classList.add('menuDiv');
 
-    let cardTitles = ['Salsiccia', 'Gamberi', 'Prosciutto e funghi', 'Diavola', 'Quattro stagioni', 'Mexicana', 'Carnivore','God pizza']
+    let cardTitles = ['Salsiccia', 'Gamberi', 'Viking pizza', 'Diavola', 'Quattro stagioni', 'Mexicana', 'Carnivore','God pizza']
     let cardPrices = ['20€', '20€', '22€', '20€', '22€', '22€', '20€', '24€'];
     for (let i = 0; i < 8; i++) {
         const card = document.createElement('div');
