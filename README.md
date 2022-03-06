@@ -1,6 +1,6 @@
 # restaurant-page
-
-## god of war themed
+------------------
+god of war themed
 
 
 available at: https://andrei3914.github.io/restaurant-page/
