@@ -1,0 +1,241 @@
+:root {
+    --main-bg-color: #9ca3af;
+}
+
+@font-face {
+    font-family: 'coolFont';
+    src: url('./Norse-Bold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url('./Nordic6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+}
+
+.tabsUl {
+    width: 300px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'coolFont', sans-serif;
+    color: white;
+    font-size: 2.2rem;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    border-bottom: 2px solid white;
+}
+
+/*#################################################
+    HERO
+*/
+.title {
+    font-family: 'coolFont', sans-serif;
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: relative;
+}
+
+.main {
+    height: 800px;
+    width: 1000px;
+    background-color: rgba(126, 137, 150, 0.7);
+
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img {
+    max-width: 100%;
+    min-width: 600px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.convImg {
+    position: absolute;
+    width: 100px;
+    height: 75px;
+
+    top: 170px;
+    left: 560px;
+    z-index: 2;
+}
+
+.convImg:hover {
+    transform: scale(1.05);
+}
+
+.interjection {
+    position: absolute;
+    top: 165px;
+    left: 570px;
+    z-index: 3;
+
+    color: white;
+    font-family: 'coolFont', sans-serif;
+    font-size: 1.5rem;
+}
+
+.pizzaImg1 {
+    background-image: url('./pizza.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+
+    z-index: 2;
+}
+
+.pizzaImg1:hover {
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.pizzaImg2 {
+    background-image: url('./pizza.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+
+    z-index: 2;
+}
+
+.pizzaImg2:hover {
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
+
+
+/*###########################################################
+    MENU
+*/
+
+.menuDiv {
+    height: 800px;
+    width: 1000px;
+    background-color: rgba(126, 137, 150, 0.7);
+
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px;
+    gap: 20px;
+    color:white;
+}
+
+.menuCard {
+    background-color: var(--main-bg-color);
+    padding: 5px;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.menuCard:hover {
+    background-color: rgba(203,213,225, 0.7);
+}
+
+.menuCardTitle {
+    font-family: 'coolFont', sans-serif;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+.menuCardBody {
+    font-family: sans-serif;
+}
+
+.menuCardPrice {
+    font-family: 'coolFont', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/*#########################################################
+    CONTACT
+*/
+.contactDiv {
+    height: 800px;
+    width: 1000px;
+    background-color: rgba(126, 137, 150, 0.7);
+
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color:white;
+}
+
+.locationImg {
+    width: 700px;
+    height: 600px;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    width: 100%;
+}
+
+.contactTitle {
+    font-family: 'coolFont', sans-serif;
+    font-size: 1.5rem;
+}
+
+.locationParagraph, .deliveryParagraph {
+    font-family: sans-serif;
+}
